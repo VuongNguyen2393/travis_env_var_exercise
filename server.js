@@ -1,3 +1,4 @@
+const TEST_VAR = process.env.TEST_VAR;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -5,7 +6,7 @@ function sleep(ms) {
 
 async function main() {
   while(true) {
-    console.log(`${$TEST_VAR}`);
+    console.log(`${TEST_VAR}`);
     await sleep(5000);
   }
 }
